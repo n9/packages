@@ -54,7 +54,7 @@
             </summary>
             <param name="callbacks">The callbacks to invoke (in order).</param>
             <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Always(System.Action{`0}[])">
+        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Always(jQueryApi.AjaxCompletedCallback{`0}[])">
             <summary>
             Add handlers to be called when the request completes or fails.
             </summary>
@@ -73,7 +73,7 @@
             </summary>
             <param name="doneCallbacks">The callbacks to invoke (in order).</param>
             <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Done(System.Action{`0}[])">
+        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Done(jQueryApi.AjaxRequestCallback{`0}[])">
             <summary>
             Add handlers to be called when the request is successfully completed. If the
             request is already completed, the handlers are still invoked.
@@ -93,7 +93,7 @@
             </summary>
             <param name="failCallbacks">The callbacks to invoke (in order).</param>
             <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Fail(System.Action{`0}[])">
+        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Fail(jQueryApi.AjaxErrorCallback{`0}[])">
             <summary>
             Add handlers to be called when the request errors. If the
             request is already completed, the handlers are still invoked.
@@ -250,7 +250,7 @@
             </summary>
             <param name="doneCallbacks">The callbacks to invoke (in order).</param>
             <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Done(System.Callback[])">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest.Done(jQueryApi.AjaxRequestCallback[])">
             <summary>
             Add handlers to be called when the request is successfully completed. If the
             request is already completed, the handlers are still invoked.
@@ -270,7 +270,7 @@
             </summary>
             <param name="failCallbacks">The callbacks to invoke (in order).</param>
             <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Fail(System.Callback[])">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest.Fail(jQueryApi.AjaxErrorCallback[])">
             <summary>
             Add handlers to be called when the request errors. If the
             request is already completed, the handlers are still invoked.
@@ -2797,23 +2797,49 @@
             <returns>The new jQueryObject.</returns></member>
         <member name="M:jQueryApi.jQueryObject.NextAll">
             <summary>
-            Gets a jQueryObject representing all the following sibling elements
-            of the matched set of elements.
+            Gets a jQueryObject representing all following siblings
+            of each element in the set of matched elements.
             </summary>
             <returns>The new jQueryObject.</returns></member>
         <member name="M:jQueryApi.jQueryObject.NextAll(System.String)">
             <summary>
-            Gets a jQueryObject representing all the following sibling elements
-            of the matched set of elements filtered by the specified selector.
+            Gets a jQueryObject representing all following siblings
+            of each element in the set of matched elements
+            filtered by the specified selector.
             </summary>
             <param name="selector">The selector to match children against.</param>
             <returns>The new jQueryObject.</returns></member>
         <member name="M:jQueryApi.jQueryObject.NextUntil(System.String)">
             <summary>
-            Gets a jQueryObject representing all the following sibling elements
-            of the matched set of elements while they match the specified selector.
+            Gets a jQueryObject representing all following siblings
+            of each element up to but not including the element
+            matched by the selector.
             </summary>
-            <param name="selector">The selector to match children against.</param>
+            <param name="selector">The selector to indicate where to stop matching following sibling elements.</param>
+            <returns>The new jQueryObject.</returns></member>
+        <member name="M:jQueryApi.jQueryObject.NextUntil(System.String,System.String)">
+            <summary>
+            Gets a jQueryObject representing all following siblings
+            of each element up to but not including the element
+            matched by the selector.
+            </summary>
+            <param name="selector">The selector to indicate where to stop matching following sibling elements.</param>
+            <param name="filter">The selector to match elements against.</param>
+            <returns>The new jQueryObject.</returns></member>
+        <member name="M:jQueryApi.jQueryObject.NextUntil(System.TypeOption{jQueryApi.jQueryObject,System.Html.Element})">
+            <summary>
+            Gets a jQueryObject representing all following siblings
+            of each element up to but not including the element.
+            </summary>
+            <param name="element">The selector to indicate where to stop matching following sibling elements.</param>
+            <returns>The new jQueryObject.</returns></member>
+        <member name="M:jQueryApi.jQueryObject.NextUntil(System.TypeOption{jQueryApi.jQueryObject,System.Html.Element},System.String)">
+            <summary>
+            Gets a jQueryObject representing all following siblings
+            of each element up to but not including the element.
+            </summary>
+            <param name="element">The element indicating where to stop matching following sibling elements.</param>
+            <param name="filter">The selector to match elements against.</param>
             <returns>The new jQueryObject.</returns></member>
         <member name="M:jQueryApi.jQueryObject.Not(System.Html.Element)">
             <summary>
