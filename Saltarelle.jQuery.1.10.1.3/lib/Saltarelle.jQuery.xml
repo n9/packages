@@ -3244,7 +3244,7 @@
             </summary>
             <param name="selector">The selector to use to filter the elements to remove.</param>
             <returns>The current jQueryObject.</returns></member>
-        <member name="M:jQueryApi.jQueryObject.RemoveAttr(System.String)">
+        <member name="M:jQueryApi.jQueryObject.RemoveAttribute(System.String)">
             <summary>
             Removes the specified attribute from each of the set of matched elements.
             </summary>
