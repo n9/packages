@@ -456,9 +456,18 @@ ss.getTypeAssembly = function ss$getTypeAssembly(type) {
 };
 
 ss.getAssemblyType = function ss$getAssemblyTypes(asm, name) {
-	var result = [];
+    var nonGenericType;
+
+    var parts = /^([^\[\],]+)(\[(.*)\])?$/.exec(name);
+    if (!parts)
+        return null;
+    name = parts[1];
+    var genericArgNames = parts[3];
+
 	if (asm.__types) {
-		return asm.__types[name] || null;
+	    nonGenericType = asm.__types[name];
+	    if (!nonGenericType)
+	        return null;
 	}
 	else {
 		var a = name.split('.');
@@ -469,8 +478,25 @@ ss.getAssemblyType = function ss$getAssemblyTypes(asm, name) {
 		}
 		if (typeof asm !== 'function')
 			return null;
-		return asm;
+		nonGenericType = asm;
 	}
+
+	if (!genericArgNames)
+	    return nonGenericType;
+
+	if (/^[^\[\]]+$/.test(genericArgNames)) 
+	    genericArgNames = genericArgNames.split(/, */);
+	else if (/^\[[^\[\]]+\](,\[[^\[\]]+\])+$/.exec(genericArgNames))
+	    genericArgNames = genericArgNames.replace(/^\[|\]$/g, '').split(/\],\[/);
+	else
+	    return null; // TODO not supported
+
+	var genericArgs = [];
+	for (var i = 0; i < genericArgNames.length; i++) {
+	    genericArgs.push(ss.getType(genericArgNames[i]));
+	}
+	
+	return ss.makeGenericType(nonGenericType, genericArgs);
 };
 
 ss.getAssemblyTypes = function ss$getAssemblyTypes(asm) {
@@ -579,9 +605,16 @@ ss.getType = function ss$getType(typeName) {
 	if (!typeName)
 		return null;
 
-	var arr = typeName.split(',');
-	var module = (arr.length > 1 ? ss.__assemblies[arr[1].trim()] : global);
-	return module ? ss.getAssemblyType(module, arr[0].trim()) : null;
+	var li = typeName.lastIndexOf(',');
+	var module = global;
+	if (li >= 0) {
+	    var moduleName = typeName.substr(li + 1).trim();
+	    if (!/[\[\]]/.test(moduleName)) {
+	        module = ss.__assemblies[moduleName];
+	        typeName = typeName.substr(0, li);
+	    }
+	}
+	return module ? ss.getAssemblyType(module, typeName.trim()) : null;
 };
 
 ss.getDefaultValue = function ss$getDefaultValue(type) {
