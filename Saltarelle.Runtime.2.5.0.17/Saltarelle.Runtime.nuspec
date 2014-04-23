@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Saltarelle.Runtime</id>
-    <version>2.5.0.13</version>
+    <version>2.5.0.17</version>
     <title>Runtime library for the Saltarelle C# to JavaScript compiler</title>
     <authors>Nikhil Kothari, Erik Källén</authors>
     <owners>Nikhil Kothari, Erik Källén</owners>
