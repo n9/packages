@@ -4,10 +4,6 @@
         <name>Saltarelle.jQuery.UI</name>
     </assembly>
     <members>
-        <member name="P:jQueryApi.UI.Effects.AddClassOptions.Children">
-            <summary>
-            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
-            </summary></member>
         <member name="P:jQueryApi.UI.Effects.AddClassOptions.Complete">
             <summary>
             A function to call once the animation is complete.
@@ -19,6 +15,10 @@
         <member name="P:jQueryApi.UI.Effects.AddClassOptions.Easing">
             <summary>
             A string indicating which <a href="/easings/">easing</a> function to use for the transition.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Effects.AddClassOptions.Children">
+            <summary>
+            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
             </summary></member>
         <member name="P:jQueryApi.UI.Effects.AddClassOptions.Queue">
             <summary>
@@ -588,10 +588,6 @@
             <summary>
             The number of times the element should pulse. An extra half pulse is added for hide/show.
             </summary></member>
-        <member name="P:jQueryApi.UI.Effects.RemoveClassOptions.Children">
-            <summary>
-            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
-            </summary></member>
         <member name="P:jQueryApi.UI.Effects.RemoveClassOptions.Complete">
             <summary>
             A function to call once the animation is complete.
@@ -603,6 +599,10 @@
         <member name="P:jQueryApi.UI.Effects.RemoveClassOptions.Easing">
             <summary>
             A string indicating which <a href="/easings/">easing</a> function to use for the transition.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Effects.RemoveClassOptions.Children">
+            <summary>
+            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
             </summary></member>
         <member name="P:jQueryApi.UI.Effects.RemoveClassOptions.Queue">
             <summary>
@@ -672,10 +672,6 @@
             <summary>
             The easing to use for the effect
             </summary></member>
-        <member name="P:jQueryApi.UI.Effects.SwitchClassOptions.Children">
-            <summary>
-            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
-            </summary></member>
         <member name="P:jQueryApi.UI.Effects.SwitchClassOptions.Complete">
             <summary>
             A function to call once the animation is complete.
@@ -688,13 +684,13 @@
             <summary>
             A string indicating which <a href="/easings/">easing</a> function to use for the transition.
             </summary></member>
+        <member name="P:jQueryApi.UI.Effects.SwitchClassOptions.Children">
+            <summary>
+            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
+            </summary></member>
         <member name="P:jQueryApi.UI.Effects.SwitchClassOptions.Queue">
             <summary>
             A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately. <strong>As of jQuery 1.7</strong>, the queue option can also accept a string, in which case the animation is added to the queue represented by that string.
-            </summary></member>
-        <member name="P:jQueryApi.UI.Effects.ToggleClassOptions.Children">
-            <summary>
-            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
             </summary></member>
         <member name="P:jQueryApi.UI.Effects.ToggleClassOptions.Complete">
             <summary>
@@ -707,6 +703,10 @@
         <member name="P:jQueryApi.UI.Effects.ToggleClassOptions.Easing">
             <summary>
             A string indicating which <a href="/easings/">easing</a> function to use for the transition.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Effects.ToggleClassOptions.Children">
+            <summary>
+            Whether the animation should additionally be applied to all descendants of the matched elements. This feature should be used with caution as the cost of determining which descendants to animate can be very expensive, and grows linearly with the number of descendants.
             </summary></member>
         <member name="P:jQueryApi.UI.Effects.ToggleClassOptions.Queue">
             <summary>
@@ -1771,10 +1771,6 @@
             <summary>
             This event is triggered when sorting stops, but when the placeholder/helper is still available.
             </summary></member>
-        <member name="E:jQueryApi.UI.Interactions.SortableObject.OnChange">
-            <summary>
-            This event is triggered during sorting, but only when the DOM position has changed.
-            </summary></member>
         <member name="E:jQueryApi.UI.Interactions.SortableObject.OnCreate">
             <summary>
             Triggered when the sortable is created.
@@ -1782,6 +1778,10 @@
         <member name="E:jQueryApi.UI.Interactions.SortableObject.OnDeactivate">
             <summary>
             This event is triggered when sorting was stopped, is propagated to all possible connected lists.
+            </summary></member>
+        <member name="E:jQueryApi.UI.Interactions.SortableObject.OnChange">
+            <summary>
+            This event is triggered during sorting, but only when the DOM position has changed.
             </summary></member>
         <member name="E:jQueryApi.UI.Interactions.SortableObject.OnOut">
             <summary>
@@ -1923,10 +1923,6 @@
             <summary>
             This event is triggered when sorting stops, but when the placeholder/helper is still available.
             </summary></member>
-        <member name="P:jQueryApi.UI.Interactions.SortableOptions.OnChange">
-            <summary>
-            This event is triggered during sorting, but only when the DOM position has changed.
-            </summary></member>
         <member name="P:jQueryApi.UI.Interactions.SortableOptions.OnCreate">
             <summary>
             Triggered when the sortable is created.
@@ -1934,6 +1930,10 @@
         <member name="P:jQueryApi.UI.Interactions.SortableOptions.OnDeactivate">
             <summary>
             This event is triggered when sorting was stopped, is propagated to all possible connected lists.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Interactions.SortableOptions.OnChange">
+            <summary>
+            This event is triggered during sorting, but only when the DOM position has changed.
             </summary></member>
         <member name="P:jQueryApi.UI.Interactions.SortableOptions.OnOut">
             <summary>
@@ -2340,10 +2340,6 @@
             <summary>
             Defines the data to use, must be specified.<para>Independent of the variant you use, the label is always treated as text. If you want the label to be treated as html you can use <a href="https://github.com/scottgonzalez/jquery-ui-extensions/blob/master/autocomplete/jquery.ui.autocomplete.html.js">Scott González' html extension</a>. The demos all focus on different variations of the <code>source</code> option - look for one that matches your use case, and check out the code.</para>
             </summary></member>
-        <member name="E:jQueryApi.UI.Widgets.AutoCompleteObject.OnChange">
-            <summary>
-            Triggered when the field is blurred, if the value has changed.
-            </summary></member>
         <member name="E:jQueryApi.UI.Widgets.AutoCompleteObject.OnClose">
             <summary>
             Triggered when the menu is hidden. Not every <code>close</code> event will be accompanied by a <code>change</code> event.
@@ -2355,6 +2351,10 @@
         <member name="E:jQueryApi.UI.Widgets.AutoCompleteObject.OnFocus">
             <summary>
             Triggered when focus is moved to an item (not selecting). The default action is to replace the text field's value with the value of the focused item, though only if the event was triggered by a keyboard interaction.<para>Canceling this event prevents the value from being updated, but does not prevent the menu item from being focused.</para>
+            </summary></member>
+        <member name="E:jQueryApi.UI.Widgets.AutoCompleteObject.OnChange">
+            <summary>
+            Triggered when the field is blurred, if the value has changed.
             </summary></member>
         <member name="E:jQueryApi.UI.Widgets.AutoCompleteObject.OnOpen">
             <summary>
@@ -2400,10 +2400,6 @@
             <summary>
             Defines the data to use, must be specified.<para>Independent of the variant you use, the label is always treated as text. If you want the label to be treated as html you can use <a href="https://github.com/scottgonzalez/jquery-ui-extensions/blob/master/autocomplete/jquery.ui.autocomplete.html.js">Scott González' html extension</a>. The demos all focus on different variations of the <code>source</code> option - look for one that matches your use case, and check out the code.</para>
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.AutoCompleteOptions.OnChange">
-            <summary>
-            Triggered when the field is blurred, if the value has changed.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.AutoCompleteOptions.OnClose">
             <summary>
             Triggered when the menu is hidden. Not every <code>close</code> event will be accompanied by a <code>change</code> event.
@@ -2415,6 +2411,10 @@
         <member name="P:jQueryApi.UI.Widgets.AutoCompleteOptions.OnFocus">
             <summary>
             Triggered when focus is moved to an item (not selecting). The default action is to replace the text field's value with the value of the focused item, though only if the event was triggered by a keyboard interaction.<para>Canceling this event prevents the value from being updated, but does not prevent the menu item from being focused.</para>
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.AutoCompleteOptions.OnChange">
+            <summary>
+            Triggered when the field is blurred, if the value has changed.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.AutoCompleteOptions.OnOpen">
             <summary>
@@ -2614,14 +2614,6 @@
             <summary>
             A function to calculate the week of the year for a given date. The default implementation uses the ISO 8601 definition: weeks start on a Monday; the first week of the year contains the first Thursday of the year.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.ChangeMonth">
-            <summary>
-            Whether the month should be rendered as a dropdown instead of text.
-            </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.ChangeYear">
-            <summary>
-            Whether the year should be rendered as a dropdown instead of text. Use the <a href="#option-yearRange"><code>yearRange</code></a> option to control which years are made available for selection.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerObject.CloseText">
             <summary>
             The text to display for the close link. Use the <a href="#option-showButtonPanel"><code>showButtonPanel</code></a> option to display this button.
@@ -2670,6 +2662,14 @@
             <summary>
             Normally the previous and next links are disabled when not applicable (see the <a href="#option-minDate"><code>minDate</code></a> and <a href="#option-maxDate"><code>maxDate</code></a> options). You can hide them altogether by setting this attribute to <code>true</code>.
             </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.ChangeMonth">
+            <summary>
+            Whether the month should be rendered as a dropdown instead of text.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.ChangeYear">
+            <summary>
+            Whether the year should be rendered as a dropdown instead of text. Use the <a href="#option-yearRange"><code>yearRange</code></a> option to control which years are made available for selection.
+            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerObject.IsRTL">
             <summary>
             Whether the current language is drawn from right to left.
@@ -2702,13 +2702,13 @@
             <summary>
             The number of months to show at once.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.OnChangeMonthYear">
-            <summary>
-            Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerObject.OnClose">
             <summary>
             Called when the datepicker is closed, whether or not a date is selected. The function receives the selected date as text (<code>""</code> if none) and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerObject.OnChangeMonthYear">
+            <summary>
+            Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerObject.OnSelect">
             <summary>
@@ -2814,14 +2814,6 @@
             <summary>
             A function to calculate the week of the year for a given date. The default implementation uses the ISO 8601 definition: weeks start on a Monday; the first week of the year contains the first Thursday of the year.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.ChangeMonth">
-            <summary>
-            Whether the month should be rendered as a dropdown instead of text.
-            </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.ChangeYear">
-            <summary>
-            Whether the year should be rendered as a dropdown instead of text. Use the <a href="#option-yearRange"><code>yearRange</code></a> option to control which years are made available for selection.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.CloseText">
             <summary>
             The text to display for the close link. Use the <a href="#option-showButtonPanel"><code>showButtonPanel</code></a> option to display this button.
@@ -2870,6 +2862,14 @@
             <summary>
             Normally the previous and next links are disabled when not applicable (see the <a href="#option-minDate"><code>minDate</code></a> and <a href="#option-maxDate"><code>maxDate</code></a> options). You can hide them altogether by setting this attribute to <code>true</code>.
             </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.ChangeMonth">
+            <summary>
+            Whether the month should be rendered as a dropdown instead of text.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.ChangeYear">
+            <summary>
+            Whether the year should be rendered as a dropdown instead of text. Use the <a href="#option-yearRange"><code>yearRange</code></a> option to control which years are made available for selection.
+            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.IsRTL">
             <summary>
             Whether the current language is drawn from right to left.
@@ -2902,13 +2902,13 @@
             <summary>
             The number of months to show at once.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.OnChangeMonthYear">
-            <summary>
-            Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.OnClose">
             <summary>
             Called when the datepicker is closed, whether or not a date is selected. The function receives the selected date as text (<code>""</code> if none) and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.OnChangeMonthYear">
+            <summary>
+            Called when the datepicker moves to a new month and/or year. The function receives the selected year, month (1-12), and the datepicker instance as parameters. <code>this</code> refers to the associated input field.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.DatePickerOptions.OnSelect">
             <summary>
@@ -3483,10 +3483,6 @@
             <summary>
             The value of the progressbar.
             </summary></member>
-        <member name="E:jQueryApi.UI.Widgets.ProgressBarObject.OnChange">
-            <summary>
-            Triggered when the value of the progressbar changes.
-            </summary></member>
         <member name="E:jQueryApi.UI.Widgets.ProgressBarObject.OnComplete">
             <summary>
             Triggered when the value of the progressbar reaches the maximum value.
@@ -3494,6 +3490,10 @@
         <member name="E:jQueryApi.UI.Widgets.ProgressBarObject.OnCreate">
             <summary>
             Triggered when the progressbar is created.
+            </summary></member>
+        <member name="E:jQueryApi.UI.Widgets.ProgressBarObject.OnChange">
+            <summary>
+            Triggered when the value of the progressbar changes.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.ProgressBarOptions.Disabled">
             <summary>
@@ -3507,10 +3507,6 @@
             <summary>
             The value of the progressbar.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.ProgressBarOptions.OnChange">
-            <summary>
-            Triggered when the value of the progressbar changes.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.ProgressBarOptions.OnComplete">
             <summary>
             Triggered when the value of the progressbar reaches the maximum value.
@@ -3518,6 +3514,10 @@
         <member name="P:jQueryApi.UI.Widgets.ProgressBarOptions.OnCreate">
             <summary>
             Triggered when the progressbar is created.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.ProgressBarOptions.OnChange">
+            <summary>
+            Triggered when the value of the progressbar changes.
             </summary></member>
         <member name="T:jQueryApi.UI.Widgets.SliderObject">
             <summary>
@@ -3618,13 +3618,13 @@
             <summary>
             This option can be used to specify multiple handles. If the <a href="#option-range"><code>range</code></a> option is set to <code>true</code>, the length of <code>values</code> should be 2.
             </summary></member>
-        <member name="E:jQueryApi.UI.Widgets.SliderObject.OnChange">
-            <summary>
-            Triggered after the user slides a handle, if the value has changed; or if the value is changed programmatically via the <a href="#method-value"><code>value</code></a> method.
-            </summary></member>
         <member name="E:jQueryApi.UI.Widgets.SliderObject.OnCreate">
             <summary>
             Triggered when the slider is created.
+            </summary></member>
+        <member name="E:jQueryApi.UI.Widgets.SliderObject.OnChange">
+            <summary>
+            Triggered after the user slides a handle, if the value has changed; or if the value is changed programmatically via the <a href="#method-value"><code>value</code></a> method.
             </summary></member>
         <member name="E:jQueryApi.UI.Widgets.SliderObject.OnSlide">
             <summary>
@@ -3674,13 +3674,13 @@
             <summary>
             This option can be used to specify multiple handles. If the <a href="#option-range"><code>range</code></a> option is set to <code>true</code>, the length of <code>values</code> should be 2.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.SliderOptions.OnChange">
-            <summary>
-            Triggered after the user slides a handle, if the value has changed; or if the value is changed programmatically via the <a href="#method-value"><code>value</code></a> method.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.SliderOptions.OnCreate">
             <summary>
             Triggered when the slider is created.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.SliderOptions.OnChange">
+            <summary>
+            Triggered after the user slides a handle, if the value has changed; or if the value is changed programmatically via the <a href="#method-value"><code>value</code></a> method.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.SliderOptions.OnSlide">
             <summary>
@@ -3792,13 +3792,13 @@
             <summary>
             The size of the step to take when spinning via buttons or via the <a href="#method-stepUp"><code>stepUp()</code></a>/<a href="#method-stepDown"><code>stepDown()</code></a> methods. The element's <code>step</code> attribute is used if it exists and the option is not explicitly set.
             </summary></member>
-        <member name="E:jQueryApi.UI.Widgets.SpinnerObject.OnChange">
-            <summary>
-            Triggered when the value of the spinner has changed and the input is no longer focused.
-            </summary></member>
         <member name="E:jQueryApi.UI.Widgets.SpinnerObject.OnCreate">
             <summary>
             Triggered when the spinner is created.
+            </summary></member>
+        <member name="E:jQueryApi.UI.Widgets.SpinnerObject.OnChange">
+            <summary>
+            Triggered when the value of the spinner has changed and the input is no longer focused.
             </summary></member>
         <member name="E:jQueryApi.UI.Widgets.SpinnerObject.OnSpin">
             <summary>
@@ -3848,13 +3848,13 @@
             <summary>
             The size of the step to take when spinning via buttons or via the <a href="#method-stepUp"><code>stepUp()</code></a>/<a href="#method-stepDown"><code>stepDown()</code></a> methods. The element's <code>step</code> attribute is used if it exists and the option is not explicitly set.
             </summary></member>
-        <member name="P:jQueryApi.UI.Widgets.SpinnerOptions.OnChange">
-            <summary>
-            Triggered when the value of the spinner has changed and the input is no longer focused.
-            </summary></member>
         <member name="P:jQueryApi.UI.Widgets.SpinnerOptions.OnCreate">
             <summary>
             Triggered when the spinner is created.
+            </summary></member>
+        <member name="P:jQueryApi.UI.Widgets.SpinnerOptions.OnChange">
+            <summary>
+            Triggered when the value of the spinner has changed and the input is no longer focused.
             </summary></member>
         <member name="P:jQueryApi.UI.Widgets.SpinnerOptions.OnSpin">
             <summary>

@@ -20,165 +20,6 @@
             An action that is invoked with an element being the Javascript 'this' context.
             </summary>
             <param name="elem">The element context ('this' in script).</param></member>
-        <member name="T:jQueryApi.jQueryDataHttpRequest`1">
-            <summary>
-            Represents an XMLHttpRequest object as a deferred object.
-            </summary></member>
-        <member name="P:jQueryApi.jQueryDataHttpRequest`1.ReadyState">
-            <summary>
-            The ready state property of the XmlHttpRequest object.
-            </summary></member>
-        <member name="P:jQueryApi.jQueryDataHttpRequest`1.ResponseXml">
-            <summary>
-            The XML document for an XML response.
-            </summary></member>
-        <member name="P:jQueryApi.jQueryDataHttpRequest`1.ResponseText">
-            <summary>
-            The text of the response.
-            </summary></member>
-        <member name="P:jQueryApi.jQueryDataHttpRequest`1.Status">
-            <summary>
-            The status code associated with the response.
-            </summary></member>
-        <member name="P:jQueryApi.jQueryDataHttpRequest`1.StatusText">
-            <summary>
-            The status text of the response.
-            </summary></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Abort">
-            <summary>
-            Aborts the request.
-            </summary></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the request completes or fails.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Always(jQueryApi.AjaxCompletedCallback{`0}[])">
-            <summary>
-            Add handlers to be called when the request completes or fails.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Complete(jQueryApi.AjaxCompletedCallback{`0})">
-            <summary>
-            Adds a callback to handle completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the request is successfully completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Done(jQueryApi.AjaxRequestCallback{`0}[])">
-            <summary>
-            Add handlers to be called when the request is successfully completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Error(jQueryApi.AjaxErrorCallback{`0})">
-            <summary>
-            Adds a callback to handle an error completing the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the request errors. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Fail(jQueryApi.AjaxErrorCallback{`0}[])">
-            <summary>
-            Add handlers to be called when the request errors. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.GetAllResponseHeaders">
-            <summary>
-            Gets the response headers associated with the request.
-            </summary>
-            <returns>The response headers.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.GetResponseHeader(System.String)">
-            <summary>
-            Gets a specific response header associated with the request.
-            </summary>
-            <param name="name">The name of the response header.</param>
-            <returns>The response header value.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.OverrideMimeType(System.String)">
-            <summary>
-            Sets the mime type on the request.
-            </summary>
-            <param name="type">The mime type to use.</param></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Pipe``1(jQueryApi.jQueryDeferredFilter{``0,`0})">
-            <summary>
-            Filters or chains the result of the request.
-            </summary>
-            <param name="successFilter">The filter to invoke when the request successfully completes.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Pipe``1(jQueryApi.jQueryDeferredFilter{``0,`0},jQueryApi.jQueryDeferredFilter{``0})">
-            <summary>
-            Filters or chains the result of the request.
-            </summary>
-            <param name="successFilter">The filter to invoke when the request successfully completes.</param>
-            <param name="failFilter">The filter to invoke when the request fails.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.SetRequestHeader(System.String,System.String)">
-            <summary>
-            Sets a request header value.
-            </summary>
-            <param name="name">The name of the request header.</param>
-            <param name="value">The value of the request header.</param></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Success(jQueryApi.AjaxCallback{`0})">
-            <summary>
-            Adds a callback to handle a successful completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Success(jQueryApi.AjaxRequestCallback{`0})">
-            <summary>
-            Adds a callback to handle a successful completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the request completes successfully.</param>
-            <param name="failCallback">The callback to invoke when the request completes with an error.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Then(System.Action{`0},System.Action{`0})">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the request completes successfully.</param>
-            <param name="failCallback">The callback to invoke when the request completes with an error.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the request completes successfully.</param>
-            <param name="failCallbacks">The callbacks to invoke when the request completes with an error.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDataHttpRequest`1.Then(System.Action{`0}[],System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the request completes successfully.</param>
-            <param name="failCallbacks">The callbacks to invoke when the request completes with an error.</param>
-            <returns>The current deferred object.</returns></member>
         <member name="T:jQueryApi.jQueryDeferredFilter">
             <summary>
             A callback that can filter a deferred object's resolved/rejected value.
@@ -197,625 +38,61 @@
             <typeparam name="TSourceData">The type of source data.</typeparam>
             <param name="value">The source value to be filtered.</param>
             <returns>The target value.</returns></member>
-        <member name="T:jQueryApi.jQueryXmlHttpRequest">
+        <member name="T:jQueryApi.jQueryXmlHttpRequest`1">
             <summary>
             Represents an XMLHttpRequest object as a deferred object.
             </summary></member>
-        <member name="P:jQueryApi.jQueryXmlHttpRequest.ReadyState">
+        <member name="P:jQueryApi.jQueryXmlHttpRequest`1.ReadyState">
             <summary>
             The ready state property of the XmlHttpRequest object.
             </summary></member>
-        <member name="P:jQueryApi.jQueryXmlHttpRequest.ResponseXml">
+        <member name="P:jQueryApi.jQueryXmlHttpRequest`1.ResponseXml">
             <summary>
             The XML document for an XML response.
             </summary></member>
-        <member name="P:jQueryApi.jQueryXmlHttpRequest.ResponseText">
+        <member name="P:jQueryApi.jQueryXmlHttpRequest`1.ResponseText">
             <summary>
             The text of the response.
             </summary></member>
-        <member name="P:jQueryApi.jQueryXmlHttpRequest.Status">
+        <member name="P:jQueryApi.jQueryXmlHttpRequest`1.Status">
             <summary>
             The status code associated with the response.
             </summary></member>
-        <member name="P:jQueryApi.jQueryXmlHttpRequest.StatusText">
+        <member name="P:jQueryApi.jQueryXmlHttpRequest`1.StatusText">
             <summary>
             The status text of the response.
             </summary></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Abort">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest`1.Abort">
             <summary>
             Aborts the request.
             </summary></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the request completes or fails.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Always(System.Callback[])">
-            <summary>
-            Add handlers to be called when the request completes or fails.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Complete(jQueryApi.AjaxCompletedCallback)">
-            <summary>
-            Adds a callback to handle completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the request is successfully completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Done(jQueryApi.AjaxRequestCallback[])">
-            <summary>
-            Add handlers to be called when the request is successfully completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Error(jQueryApi.AjaxErrorCallback)">
-            <summary>
-            Adds a callback to handle an error completing the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the request errors. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Fail(jQueryApi.AjaxErrorCallback[])">
-            <summary>
-            Add handlers to be called when the request errors. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.GetAllResponseHeaders">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest`1.GetAllResponseHeaders">
             <summary>
             Gets the response headers associated with the request.
             </summary>
             <returns>The response headers.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.GetResponseHeader(System.String)">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest`1.GetResponseHeader(System.String)">
             <summary>
             Gets a specific response header associated with the request.
             </summary>
             <param name="name">The name of the response header.</param>
             <returns>The response header value.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.OverrideMimeType(System.String)">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest`1.OverrideMimeType(System.String)">
             <summary>
             Sets the mime type on the request.
             </summary>
             <param name="type">The mime type to use.</param></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Pipe(jQueryApi.jQueryDeferredFilter)">
-            <summary>
-            Filters or chains the result of the request.
-            </summary>
-            <param name="successFilter">The filter to invoke when the request successfully completes.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Pipe(jQueryApi.jQueryDeferredFilter,jQueryApi.jQueryDeferredFilter)">
-            <summary>
-            Filters or chains the result of the request.
-            </summary>
-            <param name="successFilter">The filter to invoke when the request successfully completes.</param>
-            <param name="failFilter">The filter to invoke when the request fails.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.SetRequestHeader(System.String,System.String)">
+        <member name="M:jQueryApi.jQueryXmlHttpRequest`1.SetRequestHeader(System.String,System.String)">
             <summary>
             Sets a request header value.
             </summary>
             <param name="name">The name of the request header.</param>
             <param name="value">The value of the request header.</param></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Success(jQueryApi.AjaxCallback)">
-            <summary>
-            Adds a callback to handle a successful completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Success(jQueryApi.AjaxRequestCallback)">
-            <summary>
-            Adds a callback to handle a successful completion of the request.
-            </summary>
-            <param name="callback">The callback to invoke.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the request completes successfully.</param>
-            <param name="failCallback">The callback to invoke when the request completes with an error.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Then(System.Callback,System.Callback)">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the request completes successfully.</param>
-            <param name="failCallback">The callback to invoke when the request completes with an error.</param>
-            <returns>The current request object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the request completes successfully.</param>
-            <param name="failCallbacks">The callbacks to invoke when the request completes with an error.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryXmlHttpRequest.Then(System.Callback[],System.Callback[])">
-            <summary>
-            Add handlers to be called when the request is completed. If the
-            request is already completed, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the request completes successfully.</param>
-            <param name="failCallbacks">The callbacks to invoke when the request completes with an error.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="T:jQueryApi.IDeferred">
-            <summary>
-            Represents a deferred value.
-            </summary></member>
-        <member name="M:jQueryApi.IDeferred.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacsk to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Always(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacsk to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Done(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Fail(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.IsRejected">
-            <summary>
-            Determines whether the deferred object has been rejected.
-            </summary>
-            <returns>true if it has been rejected; false otherwise.</returns></member>
-        <member name="M:jQueryApi.IDeferred.IsResolved">
-            <summary>
-            Determines whether the deferred object has been resolved.
-            </summary>
-            <returns>true if it has been resolved; false otherwise.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Pipe(jQueryApi.jQueryDeferredFilter)">
-            <summary>
-            Filters or chains deffered objects.
-            </summary>
-            <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Pipe(jQueryApi.jQueryDeferredFilter,jQueryApi.jQueryDeferredFilter)">
-            <summary>
-            Filters or chains deffered objects.
-            </summary>
-            <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
-            <param name="failFilter">The filter to invoke when the deferred object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Then(System.Callback,System.Callback)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred.Then(System.Callback[],System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="T:jQueryApi.IDeferred`1">
-            <summary>
-            Represents a deferred value.
-            </summary></member>
-        <member name="M:jQueryApi.IDeferred`1.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacsk to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Always(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacsk to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Done(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Fail(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.IsRejected">
-            <summary>
-            Determines whether the deferred object has been rejected.
-            </summary>
-            <returns>true if it has been rejected; false otherwise.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.IsResolved">
-            <summary>
-            Determines whether the deferred object has been resolved.
-            </summary>
-            <returns>true if it has been resolved; false otherwise.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Pipe``1(jQueryApi.jQueryDeferredFilter{``0,`0})">
-            <summary>
-            Filters deffered objects.
-            </summary>
-            <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Pipe``1(jQueryApi.jQueryDeferredFilter{``0,`0},jQueryApi.jQueryDeferredFilter{``0})">
-            <summary>
-            Filters deffered objects.
-            </summary>
-            <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
-            <param name="failFilter">The filter to invoke when the deferred object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Pipe``1(System.Func{`0,jQueryApi.IDeferred{``0}})">
-            <summary>
-            Chains deffered objects.
-            </summary>
-            <param name="successChain">The filter to invoke when the deferred object is resolved.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Then(System.Action{`0},System.Action{`0})">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.IDeferred`1.Then(System.Action{`0}[],System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="T:jQueryApi.jQueryDeferredInitializer">
-            <summary>
-            A callback that can initialize a deferred object during construction.
-            </summary>
-            <param name="deferred">The deferred object being created.</param></member>
         <member name="T:jQueryApi.jQueryDeferredInitializer`1">
             <summary>
             A callback that can initialize a deferred object during construction.
             </summary>
             <param name="deferred">The deferred object being created.</param></member>
-        <member name="T:jQueryApi.jQueryDeferred">
-            <summary>
-            Represents a deferred value.
-            </summary></member>
-        <member name="M:jQueryApi.jQueryDeferred.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Always(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Done(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Fail(System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.IsRejected">
-            <summary>
-            Determines whether the deferred object has been rejected.
-            </summary>
-            <returns>true if it has been rejected; false otherwise.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.IsResolved">
-            <summary>
-            Determines whether the deferred object has been resolved.
-            </summary>
-            <returns>true if it has been resolved; false otherwise.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Promise">
-            <summary>
-            Returns a deferred object that can be further composed.
-            </summary>
-            <returns>A deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Reject(System.Object[])">
-            <summary>
-            Rejects the deferred object and call any failure callbacks with the specified arguments.
-            </summary>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.RejectWith(System.Object,System.Object[])">
-            <summary>
-            Rejects the deferred object and call any failure callbacks with the specified arguments
-            using the specified context as the this parameter.
-            </summary>
-            <param name="context">The context in which the callback is invoked.</param>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Resolve(System.Object[])">
-            <summary>
-            Resolves the deferred object and call any done callbacks with the specified arguments.
-            </summary>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.ResolveWith(System.Object,System.Object[])">
-            <summary>
-            Resolves the deferred object and call any failure callbacks with the specified arguments
-            using the specified context as the this parameter.
-            </summary>
-            <param name="context">The context in which the callback is invoked.</param>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Then(System.Callback,System.Callback)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred.Then(System.Callback[],System.Callback[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="T:jQueryApi.jQueryDeferred`1">
-            <summary>
-            Represents a deferred value.
-            </summary></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Always(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Always(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or
-            rejected.
-            </summary>
-            <param name="callbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Done(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Done(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Fail(System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Fail(System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is rejected. If the
-            deferred object is already resolved, the handlers are still invoked.
-            </summary>
-            <param name="failCallbacks">The callbacks to invoke (in order).</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.IsRejected">
-            <summary>
-            Determines whether the deferred object has been rejected.
-            </summary>
-            <returns>true if it has been rejected; false otherwise.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.IsResolved">
-            <summary>
-            Determines whether the deferred object has been resolved.
-            </summary>
-            <returns>true if it has been resolved; false otherwise.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Promise">
-            <summary>
-            Returns a deferred object that can be further composed.
-            </summary>
-            <returns>A deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Reject(`0[])">
-            <summary>
-            Rejects the deferred object and call any failure callbacks with the specified arguments.
-            </summary>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.RejectWith(System.Object,`0[])">
-            <summary>
-            Rejects the deferred object and call any failure callbacks with the specified arguments
-            using the specified context as the this parameter.
-            </summary>
-            <param name="context">The context in which the callback is invoked.</param>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Resolve(`0[])">
-            <summary>
-            Resolves the deferred object and call any done callbacks with the specified arguments.
-            </summary>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.ResolveWith(System.Object,`0[])">
-            <summary>
-            Resolves the deferred object and call any failure callbacks with the specified arguments
-            using the specified context as the this parameter.
-            </summary>
-            <param name="context">The context in which the callback is invoked.</param>
-            <param name="args">The arguments to pass to the callbacks.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Then(System.Action,System.Action)">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Then(System.Action{`0},System.Action{`0})">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallback">The callback to invoke when the object is resolved.</param>
-            <param name="failCallback">The callback to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Then(System.Action[],System.Action[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryDeferred`1.Then(System.Action{`0}[],System.Action{`0}[])">
-            <summary>
-            Add handlers to be called when the deferred object is resolved or rejected.
-            If the object has already been resolved or rejected, the handlers are still invoked.
-            </summary>
-            <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
-            <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
-            <returns>The current deferred object.</returns></member>
         <member name="T:jQueryApi.jQueryObject">
             <summary>
             Represents a jQuery result that wraps a set of elements.
@@ -2853,7 +2130,7 @@
             Returns a new jQueryObject with the specified elements removed from the
             current set of matching elements.
             </summary>
-            <param name="elements">The element to remove.</param>
+            <param name="elements">The elements to remove.</param>
             <returns>The new jQueryObject.</returns></member>
         <member name="M:jQueryApi.jQueryObject.Not(jQueryApi.jQueryObject)">
             <summary>
@@ -3204,19 +2481,19 @@
             </summary>
             <param name="selector">The selector to match children against.</param>
             <returns>The new jQueryObject.</returns></member>
-        <member name="M:jQueryApi.jQueryObject.Promise">
+        <member name="M:jQueryApi.jQueryObject.Promise``1">
             <summary>
             Creates a deferred object to observe when all animations are completed.
             </summary>
             <returns>A deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryObject.Promise(System.String)">
+        <member name="M:jQueryApi.jQueryObject.Promise``1(System.String)">
             <summary>
             Creates a deferred object to observe when all actions of the specified
             type are completed.
             </summary>
             <param name="type">The type of actions to observe.</param>
             <returns>A deferred object.</returns></member>
-        <member name="M:jQueryApi.jQueryObject.Promise(System.String,System.Object)">
+        <member name="M:jQueryApi.jQueryObject.Promise``1(System.String,System.Object)">
             <summary>
             Creates a deferred object to observe when all actions of the specified
             type are completed. The specified target object is modified to contain
@@ -4214,23 +3491,11 @@
             </summary>
             <param name="wrappingFunction">The functio returning the HTML to wrap with.</param>
             <returns>The current jQueryObject.</returns></member>
-        <member name="T:jQueryApi.AjaxCallback">
-            <summary>
-            A callback to be invoked for an Ajax request.
-            </summary>
-            <param name="data">The result of the request.</param></member>
         <member name="T:jQueryApi.AjaxCallback`1">
             <summary>
             A callback to be invoked for an Ajax request.
             </summary>
             <param name="data">The result of the request.</param></member>
-        <member name="T:jQueryApi.AjaxRequestCallback">
-            <summary>
-            A callback to be invoked for an Ajax request.
-            </summary>
-            <param name="data">The result of the request.</param>
-            <param name="textStatus">The status of the request.</param>
-            <param name="request">The request that was invoked.</param></member>
         <member name="T:jQueryApi.AjaxRequestCallback`1">
             <summary>
             A callback to be invoked for an Ajax request.
@@ -4238,13 +3503,6 @@
             <param name="data">The result of the request.</param>
             <param name="textStatus">The status of the request.</param>
             <param name="request">The request that was invoked.</param></member>
-        <member name="T:jQueryApi.AjaxErrorCallback">
-            <summary>
-            A callback to be invoked for a failed Ajax request.
-            </summary>
-            <param name="request">The request that was invoked.</param>
-            <param name="textStatus">The status of the request.</param>
-            <param name="error">The error or exception if any.</param></member>
         <member name="T:jQueryApi.AjaxErrorCallback`1">
             <summary>
             A callback to be invoked for a failed Ajax request.
@@ -4252,23 +3510,12 @@
             <param name="request">The request that was invoked.</param>
             <param name="textStatus">The status of the request.</param>
             <param name="error">The error or exception if any.</param></member>
-        <member name="T:jQueryApi.AjaxCompletedCallback">
-            <summary>
-            A callback to be invoked for a completed Ajax request.
-            </summary>
-            <param name="request">The request that was invoked.</param>
-            <param name="textStatus">The status of the request.</param></member>
         <member name="T:jQueryApi.AjaxCompletedCallback`1">
             <summary>
             A callback to be invoked for a completed Ajax request.
             </summary>
             <param name="request">The request that was invoked.</param>
             <param name="textStatus">The status of the request.</param></member>
-        <member name="T:jQueryApi.AjaxSendingCallback">
-            <summary>
-            A callback to be invoked for an Ajax request being sent.
-            </summary>
-            <param name="request">The request that was invoked.</param></member>
         <member name="T:jQueryApi.AjaxSendingCallback`1">
             <summary>
             A callback to be invoked for an Ajax request being sent.
@@ -4280,18 +3527,11 @@
             </summary>
             <param name="data">The raw data returned from the server.</param>
             <param name="dataType">The data type returned from the server.</param></member>
-        <member name="T:jQueryApi.XmlHttpRequestCreator">
+        <member name="T:jQueryApi.XmlHttpRequestCreator`1">
             <summary>
             Creates a jQueryXmlHttpRequest object.
             </summary>
             <returns>A newly created request instance.</returns></member>
-        <member name="T:jQueryApi.AjaxEventHandler">
-            <summary>
-            Handles ajax events.
-            </summary>
-            <param name="e">The event information.</param>
-            <param name="request">The request instance.</param>
-            <param name="options">The Ajax options associated with the request.</param></member>
         <member name="T:jQueryApi.AjaxEventHandler`1">
             <summary>
             Handles ajax events.
@@ -4299,14 +3539,6 @@
             <param name="e">The event information.</param>
             <param name="request">The request instance.</param>
             <param name="options">The Ajax options associated with the request.</param></member>
-        <member name="T:jQueryApi.AjaxErrorEventHandler">
-            <summary>
-            Handles ajax error events.
-            </summary>
-            <param name="e">The event information.</param>
-            <param name="request">The request instance.</param>
-            <param name="options">The Ajax options associated with the request.</param>
-            <param name="error">The error information.</param></member>
         <member name="T:jQueryApi.AjaxErrorEventHandler`1">
             <summary>
             Handles ajax error events.
@@ -4315,13 +3547,13 @@
             <param name="request">The request instance.</param>
             <param name="options">The Ajax options associated with the request.</param>
             <param name="error">The error information.</param></member>
-        <member name="T:jQueryApi.AjaxPrefilterCallback">
+        <member name="T:jQueryApi.AjaxPrefilterCallback`1">
             <summary>
-            Delegate used for <see cref="M:jQueryApi.jQuery.AjaxPrefilter(jQueryApi.AjaxPrefilterCallback)" />
+            Delegate used for see xxx
             </summary>
             <param name="options">The request options.</param>
             <param name="originalOptions">The options as provided to the ajax method, unmodified and, thus, without defaults from ajaxSettings.</param>
-            <param name="jqXHR">The <see cref="T:jQueryApi.jQueryXmlHttpRequest" /> object of the request.</param></member>
+            <param name="jqXHR">The see xxx object of the request.</param></member>
         <member name="T:jQueryApi.ArrayMapCallback">
             <summary>
             A callback to be invoked for each item in an array being mapped.
@@ -4336,126 +3568,126 @@
             <param name="item">The item within the array.</param>
             <param name="index">The index of the item.</param>
             <returns>True if the value satisfies the filter; false if it doesn't.</returns></member>
-        <member name="T:jQueryApi.jQueryAjaxOptions">
+        <member name="T:jQueryApi.jQueryAjaxOptions`1">
             <summary>
             Represents Ajax request settings or options.
             </summary></member>
-        <member name="M:jQueryApi.jQueryAjaxOptions.#ctor">
+        <member name="M:jQueryApi.jQueryAjaxOptions`1.#ctor">
             <summary>
             Initializes an empty instance of a jQueryAjaxOptions object.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Async">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Async">
             <summary>
             Gets or sets whether the request is async.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.BeforeSend">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.BeforeSend">
             <summary>
             Gets or sets the callback to invoke before the request is sent.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Cache">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Cache">
             <summary>
             Gets or sets whether the request can be cached.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Complete">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Complete">
             <summary>
             Gets or sets the callback invoked after the request is completed
             and success or error callbacks have been invoked.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.ContentType">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.ContentType">
             <summary>
             Gets or sets the content type of the data sent to the server.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Context">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Context">
             <summary>
             Gets or sets the element that will be the context for the request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Converters">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Converters">
             <summary>
             A map of dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Data">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Data">
             <summary>
             Gets or sets the data to be sent to the server.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.DataType">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.DataType">
             <summary>
             Gets or sets the data type expected in response from the server.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Error">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Error">
             <summary>
             Gets or sets the callback to be invoked if the request fails.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.DataFilter">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.DataFilter">
             <summary>
             Gets or sets the function to be used to handle the raw response data of XMLHttpRequest.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Global">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Global">
             <summary>
             Gets or sets whether to trigger global event handlers for this Ajax request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.IfModified">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.IfModified">
             <summary>
             Gets or sets whether the request is successful only if its been modified since
             the last request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.IsLocal">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.IsLocal">
             <summary>
             Gets or sets whether the current environment should be treated as a local
             environment (eg. when the page is loaded using file://).
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Jsonp">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Jsonp">
             <summary>
             Gets or sets the callback parameter name to use for JSONP requests.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.JsonpCallback">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.JsonpCallback">
             <summary>
             Gets or sets the callback name to use for JSONP requests.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.MimeType">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.MimeType">
             <summary>
             Gets or sets the mime type of the request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Password">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Password">
             <summary>
             Gets or sets the password to be used for an HTTP authentication request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.ProcessData">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.ProcessData">
             <summary>
             Gets or sets whether the data passed in will be processed.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.ScriptCharset">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.ScriptCharset">
             <summary>
             Gets or sets how to handle character sets for script and JSONP requests.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Success">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Success">
             <summary>
             Gets or sets the function to invoke upon successful completion of the request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Timeout">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Timeout">
             <summary>
             Gets or sets the timeout in milliseconds for the request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Traditional">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Traditional">
             <summary>
             Gets or sets if you want to use traditional parameter serialization.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Type">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Type">
             <summary>
             Gets or sets the type or HTTP verb associated with the request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Url">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Url">
             <summary>
             Gets or sets the URL to be requested.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.Username">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.Username">
             <summary>
             Gets or sets the name of the user to use in a HTTP authentication request.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.XmlHttpRequestCreator">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.XmlHttpRequestCreator">
             <summary>
             Gets or sets the function creating the XmlHttpRequest instance.
             </summary></member>
-        <member name="P:jQueryApi.jQueryAjaxOptions.XhrFields">
+        <member name="P:jQueryApi.jQueryAjaxOptions`1.XhrFields">
             <summary>
             Gets or sets a set of additional name/value pairs set of the XmlHttpRequest
             object.
@@ -4840,50 +4072,31 @@
             <summary>
             Gets the current window object wrapped into a jQuery object.
             </summary></member>
-        <member name="M:jQueryApi.jQuery.AjaxPrefilter(jQueryApi.AjaxPrefilterCallback)">
+        <member name="M:jQueryApi.jQuery.AjaxPrefilter``1(jQueryApi.AjaxPrefilterCallback{``0})">
             <summary>
             Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
             </summary>
             <param name="handler">A handler to set default values for future Ajax requests.</param></member>
-        <member name="M:jQueryApi.jQuery.Ajax(System.String)">
+        <member name="M:jQueryApi.jQuery.Ajax``1(System.String)">
             <summary>
             Issues an Ajax request.
             </summary>
             <param name="url">The endpoint to which the request is issued.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Ajax(System.String,jQueryApi.jQueryAjaxOptions)">
-            <summary>
-            Issues an Ajax request.
-            </summary>
-            <param name="url">The endpoint to which the request is issued.</param>
-            <param name="options">The options and settings for the request to invoke.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Ajax(jQueryApi.jQueryAjaxOptions)">
-            <summary>
-            Issues an Ajax request.
-            </summary>
-            <param name="options">The options and settings for the request to invoke.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.AjaxRequest``1(System.String)">
-            <summary>
-            Issues an Ajax request.
-            </summary>
-            <param name="url">The endpoint to which the request is issued.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.AjaxRequest``1(System.String,jQueryApi.jQueryAjaxOptions)">
+        <member name="M:jQueryApi.jQuery.Ajax``1(System.String,jQueryApi.jQueryAjaxOptions{``0})">
             <summary>
             Issues an Ajax request.
             </summary>
             <param name="url">The endpoint to which the request is issued.</param>
             <param name="options">The options and settings for the request to invoke.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.AjaxRequest``1(jQueryApi.jQueryAjaxOptions)">
+        <member name="M:jQueryApi.jQuery.Ajax``1(jQueryApi.jQueryAjaxOptions{``0})">
             <summary>
             Issues an Ajax request.
             </summary>
             <param name="options">The options and settings for the request to invoke.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.AjaxSetup(jQueryApi.jQueryAjaxOptions)">
+        <member name="M:jQueryApi.jQuery.AjaxSetup``1(jQueryApi.jQueryAjaxOptions{``0})">
             <summary>
             Sets up defaults for future Ajax requests.
             </summary>
@@ -4896,20 +4109,11 @@
             <param name="eventName">The name of the event.</param>
             <typeparam name="TEvent">The type of the event to create.</typeparam>
             <returns>A new jQueryEvent object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Deferred">
+        <member name="M:jQueryApi.jQuery.Deferred``1">
             <summary>
             Creates a new instance of a deferred object.
             </summary></member>
-        <member name="M:jQueryApi.jQuery.DeferredData``1">
-            <summary>
-            Creates a new instance of a deferred object.
-            </summary></member>
-        <member name="M:jQueryApi.jQuery.Deferred(jQueryApi.jQueryDeferredInitializer)">
-            <summary>
-            Creates a new instance of a deferred object.
-            </summary>
-            <param name="initializer">An initializer callback to initialize the new deferred object.</param></member>
-        <member name="M:jQueryApi.jQuery.DeferredData``1(jQueryApi.jQueryDeferredInitializer{``0})">
+        <member name="M:jQueryApi.jQuery.Deferred``1(jQueryApi.jQueryDeferredInitializer{``0})">
             <summary>
             Creates a new instance of a deferred object.
             </summary>
@@ -5060,20 +4264,20 @@
             </summary>
             <param name="o">The object to wrap.</param>
             <returns>The resulting jQueryObject instance.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String)">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String)">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
             <param name="url">The URL to request.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String,jQueryApi.AjaxCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String,jQueryApi.AjaxCallback{``0})">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
             <param name="url">The URL to request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String,System.Object,jQueryApi.AjaxCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
@@ -5081,7 +4285,7 @@
             <param name="data">A string or dictionary containing the data sent with the request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String,System.Object,jQueryApi.AjaxRequestCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0})">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
@@ -5089,16 +4293,7 @@
             <param name="data">A string or dictionary containing the data sent with the request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String,System.Object,jQueryApi.AjaxCallback{System.Object},System.String)">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <param name="dataType">The type of data expected in the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Get(System.String,System.Object,jQueryApi.AjaxRequestCallback{System.Object},System.String)">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String,System.Object,jQueryApi.AjaxCallback{``0},System.String)">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
@@ -5107,36 +4302,7 @@
             <param name="callback">The callback to invoke with the response.</param>
             <param name="dataType">The type of data expected in the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String)">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String,jQueryApi.AjaxCallback{``0})">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0})">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String,System.Object,jQueryApi.AjaxCallback{``0},System.String)">
+        <member name="M:jQueryApi.jQuery.Get``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0},System.String)">
             <summary>
             Load data from the server using a HTTP GET request.
             </summary>
@@ -5145,50 +4311,20 @@
             <param name="callback">The callback to invoke with the response.</param>
             <param name="dataType">The type of data expected in the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetData``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0},System.String)">
-            <summary>
-            Load data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <param name="dataType">The type of data expected in the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJson(System.String)">
+        <member name="M:jQueryApi.jQuery.GetJson``1(System.String)">
             <summary>
             Load JSON data from the server using a HTTP GET request.
             </summary>
             <param name="url">The URL to request.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJson(System.String,jQueryApi.AjaxCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.GetJson``1(System.String,jQueryApi.AjaxCallback{``0})">
             <summary>
             Load JSON data from the server using a HTTP GET request.
             </summary>
             <param name="url">The URL to request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJson(System.String,System.Object,jQueryApi.AjaxCallback{System.Object})">
-            <summary>
-            Load JSON data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJsonData``1(System.String)">
-            <summary>
-            Load JSON data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJsonData``1(System.String,jQueryApi.AjaxCallback{``0})">
-            <summary>
-            Load JSON data from the server using a HTTP GET request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.GetJsonData``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
+        <member name="M:jQueryApi.jQuery.GetJson``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
             <summary>
             Load JSON data from the server using a HTTP GET request.
             </summary>
@@ -5330,27 +4466,20 @@
             </summary>
             <param name="data">The xml markup.</param>
             <returns>The parsed document.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String)">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String)">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
             <param name="url">The URL to request.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,jQueryApi.AjaxCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String,jQueryApi.AjaxCallback{``0})">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
             <param name="url">The URL to request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,System.Object)">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,System.Object,jQueryApi.AjaxCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
@@ -5358,7 +4487,7 @@
             <param name="data">A string or dictionary containing the data sent with the request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,System.Object,jQueryApi.AjaxRequestCallback{System.Object})">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0})">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
@@ -5366,7 +4495,7 @@
             <param name="data">A string or dictionary containing the data sent with the request.</param>
             <param name="callback">The callback to invoke with the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,System.Object,jQueryApi.AjaxCallback{System.Object},System.String)">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String,System.Object,jQueryApi.AjaxCallback{``0},System.String)">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
@@ -5375,54 +4504,7 @@
             <param name="callback">The callback to invoke with the response.</param>
             <param name="dataType">The type of data expected in the response.</param>
             <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.Post(System.String,System.Object,jQueryApi.AjaxRequestCallback{System.Object},System.String)">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <param name="dataType">The type of data expected in the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String)">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String,jQueryApi.AjaxCallback{``0})">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String,System.Object,jQueryApi.AjaxCallback{``0})">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0})">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String,System.Object,jQueryApi.AjaxCallback{``0},System.String)">
-            <summary>
-            Post data to the server using a HTTP POST request.
-            </summary>
-            <param name="url">The URL to request.</param>
-            <param name="data">A string or dictionary containing the data sent with the request.</param>
-            <param name="callback">The callback to invoke with the response.</param>
-            <param name="dataType">The type of data expected in the response.</param>
-            <returns>The jQueryXmlHttpRequest object.</returns></member>
-        <member name="M:jQueryApi.jQuery.PostRequest``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0},System.String)">
+        <member name="M:jQueryApi.jQuery.Post``1(System.String,System.Object,jQueryApi.AjaxRequestCallback{``0},System.String)">
             <summary>
             Post data to the server using a HTTP POST request.
             </summary>
@@ -5483,7 +4565,7 @@
             </summary>
             <param name="o">The object whose type is to be looked up.</param>
             <returns>The type name of the object.</returns></member>
-        <member name="M:jQueryApi.jQuery.When(jQueryApi.IDeferred[])">
+        <member name="M:jQueryApi.jQuery.When(jQueryApi.IjQueryPromise{System.Object}[])">
             <summary>
             Creates a deferred object representing the aggregate of the specified
             deferred objects.
@@ -5498,7 +4580,7 @@
             </summary>
             <param name="deferreds">The set of deferred objects.</param>
             <returns>A deferred object representing the individual deferred objects.</returns></member>
-        <member name="M:jQueryApi.jQuery.WhenData``1(jQueryApi.IDeferred{``0}[])">
+        <member name="M:jQueryApi.jQuery.WhenData``1(jQueryApi.IjQueryPromise{``0}[])">
             <summary>
             Creates a deferred object representing the aggregate of the specified
             deferred objects.
