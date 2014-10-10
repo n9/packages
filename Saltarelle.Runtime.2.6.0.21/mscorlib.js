@@ -3463,7 +3463,7 @@ ss_Task.fromResult = function Task$fromResult(result) {
 	return t;
 };
 
-ss_Task.run = function Task$fromResult(f) {
+ss_Task.run = function Task$run(f) {
 	var tcs = new ss_TaskCompletionSource();
 	setTimeout(function() {
 		try {
