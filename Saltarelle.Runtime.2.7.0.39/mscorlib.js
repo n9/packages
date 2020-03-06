@@ -3685,6 +3685,19 @@ ss_Task.fromResult = function Task$fromResult(result) {
 	return t;
 };
 
+ss_Task.fromCanceled = function Task$fromCanceled(cancellationToken) {
+	var t = new ss_Task();
+	t.status = 6;
+	return t;
+};
+
+ss_Task.fromException = function Task$fromException(exception) {
+	var t = new ss_Task();
+	t.status = 7;
+	t.exception = exception;
+	return t;
+};
+
 ss_Task.run = function Task$run(f) {
 	var tcs = new ss_TaskCompletionSource();
 	setTimeout(function() {
